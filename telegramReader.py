@@ -55,11 +55,10 @@ def gettingTelegramData(data):
             messages = history.messages
             for message in messages:
                 if message.message != None:
-                    add_a_row('.asset/telegramRecords.csv',[message.date.timestamp(), message.message.encode('utf-8'), message.id])
+                    add_a_row('asset/telegramRecords.csv',[message.date.timestamp(), message.message.encode('utf-8'), message.id])
             offset_id = messages[len(messages) - 1].id
             total_messages = len(all_messages)
-            if data["total_count_limit"] != 0 and total_messages >= data["total_count_limit"]:
-                break
+            
 
     # write needed data in a file
     with client:

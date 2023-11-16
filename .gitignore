@@ -1,9 +1,9 @@
 *.session
 config.ini
-asset/*
 result/*
 info.csv
 !asset/.gitkeep
 !result/.gitkeep
 __pycache__
 base_laooger
+*.session-journal
