@@ -5,10 +5,10 @@ def init():
     config.read("./config.ini")
     data = {}
 
-    data["api_id"] = config['telegram']['api_id']
-    data["api_hash"] = config['telegram']['api_hash']
-    data["username"] = config['telegram']['username']
-    data["phone"] = config['telegram']['phone']
-    data["channel_link"] = config['telegram']['phone']
+    data["api_id"] = config['Telegram']['api_id']
+    data["api_hash"] = config['Telegram']['api_hash']
+    data["username"] = config['Telegram']['username']
+    data["phone"] = config['Telegram']['phone']
+    data["channel_link"] = config['Telegram']['phone']
 
     return data
